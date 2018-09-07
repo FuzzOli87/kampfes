@@ -1,0 +1,6 @@
+dist
+.gitignore
+.babel.json
+npm-debug.log
+node_modules/
+coverage/

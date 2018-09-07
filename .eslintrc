@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "@parkhub/parkhub-base",
+  ],
+  "parser": "babel-eslint"
+}
+
+

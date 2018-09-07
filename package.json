@@ -1,0 +1,88 @@
+{
+  "name": "kampfes",
+  "version": "0.0.0-semantically-released",
+  "description": "A library to help you test applications that work with Kafka.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=3"
+  },
+  "author": "Daniel Olivares",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@parkhub/eslint-config-parkhub-base": "^1.2.3",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-strict-mode": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "codecov": "^3.0.4",
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "documentation": "^8.1.0",
+    "eslint": "^5.3.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.21.0",
+    "husky": "^0.14.3",
+    "jest": "^23.5.0",
+    "leasot": "^6.3.0",
+    "nps": "^5.9.2",
+    "nps-utils": "^1.7.0",
+    "opt-cli": "^1.6.0",
+    "prettier-eslint-cli": "4.7.1",
+    "rimraf": "^2.6.2",
+    "semantic-release": "^15.9.8",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 85,
+        "functions": 85,
+        "lines": 85,
+        "statements": 85
+      }
+    },
+    "testMatch": [
+      "<rootDir>/src/**/?(*.)test.js?(x)"
+    ],
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "dist/*"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parkhub/kampfes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/parkhub/kampfes/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "node-rdkafka": "^2.4.1"
+  }
+}
